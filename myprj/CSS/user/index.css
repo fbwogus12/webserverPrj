@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	margin: 5px;
+	height: 1200px;
+	background-color: rgba(61, 61, 61, 0.014);
+	z-index: 1;
+}
+
+.hidden {
+	display: none;
+}
+
+#wrap {
+	border: 0px dotted red;
+	position: relative;
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	text-align: left;
+	z-index: 1;
+	background-color: rgb(255, 255, 255);
+}
+
+header {
+	position: relative;
+	height: 270px;
+	margin-bottom: 10px;
+}
+
+header .head-line {
+	position: absolute;
+	height: 377px;
+	width: 1200px;
+	z-index: 2;
+}
+
+header .gnb {
+	position: absolute;
+	white-space: nowrap;
+	width: 1200px;
+	height: 70px;
+	top: 304px;
+	background-color: #564d4e;
+	z-index: 3;
+}
+
+header .gnb ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	zoom: 1;
+}
+
+header .gnb li {
+	float: left;
+	list-style: none;
+	position: relative;
+	white-space: nowrap;
+	font-size: 20px;
+	height: 60px;
+	padding: 3px;
+	margin-left: 5px;
+	margin-right: 15px;
+}
+
+header .gnb li:last-child {
+	margin-right: 0px !important;
+}
+
+.direct_btn, .drop_btn {
+	background-color: #564d4e;
+	border: none;
+	color: white;
+	font-weight: bolder;
+	height: 62px;
+}
+
+.drop_btn:hover {
+	text-decoration: underline;
+	text-decoration-color: rgb(255, 154, 154);
+}
+
+main {
+	margin-top: 109px;
+	position: relative;
+	z-index: 1;
+	border: 1px solid rgb(212, 210, 210);
+	padding-bottom: 20px;
+	zoom: 1;
+	width: 1200px;
+	height: auto;
+}
+
+main .lnb {
+	position: relative;
+	width: 300px;
+	height: 2500px;
+	float: left;
+	background-color: rgb(233, 233, 233);
+}
+
+main .lnb .user-wrapper {
+	display: block;
+	overflow: hidden;
+}
+#login-container{
+    background: #eeeeee;
+    position: relative;
+
+}
+
+#login-container fieldset{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: none;
+}
+
+#login-container legend{
+    display: nonel;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#login-container fieldset #login-box{
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#login-box .login-btn{
+    float: left;
+    width: 100%;
+    position: relative;
+    text-align: right;
+    height: auto;
+}
+
+.login-btn img{
+    float:left;
+    appearance: none;
+    background-color: initial;
+    cursor: pointer;
+    margin-left: 45px;
+    width: 200px;
+    height: 70px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#login-box .login-menu{
+    margin-left: 23px;
+    overflow: hidden;
+    padding:0;
+    padding-top:3px;
+    list-style: none;
+    width: 71%;
+}
+
+#login-box .login-menu li{
+    float: left;
+    display: block;
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+#login-box .login-menu li a{
+    border-top: 2px solid rgb(179, 179, 179);
+    text-decoration: none;
+}
+
+main .main-content {
+	color: black;
+	line-height: 1.5;
+	display: block;
+	position: relative;
+	width: 896px;
+	height: 100%;
+	float: right;
+}
+
+.content {
+	float: left;
+	border: none;
+	width: 400px;
+	height: 400px;
+	margin: 24px;
+	border-radius: 10px;
+	background-color: rgb(247, 247, 247);
+	box-shadow: 10px 10px 11px #c1c1c1;
+	transition: all 1s;
+}
+
+.content:hover {
+	box-shadow: 0 0 0;
+	transition: all 0.5s;
+	border: 2px solid #c0c0c0;
+}
+
+.content a {
+	text-decoration: none;
+	color: black;
+}
+
+.content a:hover {
+	color: navy;
+	font-weight: bolder;
+	text-decoration: underline;
+	text-decoration-color: lightSteelBlue;
+}
+
+.content h1 {
+	text-align: center;
+	background-color: #d1d1d1;
+	border-bottom: 3px solid #4e3c3c;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.content ul {
+	margin: 0;
+	padding: 0;
+}
+
+.content li {
+	list-style: none;
+	padding-left: 15px;
+	margin-bottom: 7px;
+}
+
+.urg-video {
+	width: 500px;
+	height: 250px;
+}
+
+/*코드 원출처 : (http://junil-hwang.com/ 황준일님의 깃헙 블로그) 미약한 수정 - 유재현*/
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-slider {
+	height: 421px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 21px;
+}
+
+.main-slider ul {
+	width: calc(100% * 5);
+	display: flex;
+}
+
+.main-slider li {
+	width: calc(100%/ 5);
+	height: 360px;
+}
+
+.main-slider li:nth-child(1) {
+	
+}
+
+.main-slider li:nth-child(2) {
+	
+}
+
+.main-slider li:nth-child(3) {
+	
+}
+
+.main-slider li:nth-child(4) {
+	
+}
+
+.main-slider li:nth-child(5) {
+	
+}
+
+.main-slider input {
+	display: none;
+}
+
+.main-slider .selector {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 10;
+}
+
+.main-slider .selector label {
+	width: 17px;
+	height: 17px;
+	border-radius: 10px;
+	border: 2px solid #666;
+	display: inline-block;
+	background: #fff;
+	font-size: 0;
+	transition: 0.5s;
+	cursor: pointer;
+}
+/* 슬라이드 조작 */
+#sel1:checked ~ ul {
+	margin-left: 0;
+}
+
+#sel2:checked ~ ul {
+	margin-left: -100%;
+}
+
+#sel3:checked ~ ul {
+	margin-left: -200%;
+}
+
+#sel4:checked ~ ul {
+	margin-left: -300%;
+}
+
+#sel5:checked ~ ul {
+	margin-left: -400%;
+}
+/* selector 조작 */
+#sel1:checked ~ .selector label:nth-child(1), #sel2:checked ~ .selector label:nth-child(2),
+	#sel3:checked ~ .selector label:nth-child(3), #sel4:checked ~ .selector label:nth-child(4),
+	#sel5:checked ~ .selector label:nth-child(5) {
+	background: rgb(248, 0, 0);
+}
+
+ul, li {
+	padding-left: 0rem !important;
+	box-sizing: unset;
+}
+
+.main-slider img {
+	width: 896px;
+	height: 420px;
+	border: 0;
+}
+
+/*타이틀 이미지*/
+.header-board {
+	width: 1200px;
+	height: 304px;
+	overflow: hidden;
+	border: 2px solid black;
+}
+
+.header-board img {
+	width: 1200px;
+	height: 304px;
+}
+
+/*gnb 드랍다운 리스트 */
+.children-category {
+	display: none;
+	color: rgb(44, 44, 44);
+	border-top: none;
+	border-radius: 10px;
+	z-index: 3;
+	position: absolute;
+	top: 55px;
+}
+
+.children-category a {
+	color: white;
+	padding: 12px;
+	text-decoration: none;
+	display: block;
+	background-color: #564d4e;
+	text-align: center;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-radius: 10px;
+}
+
+.children-category a:hover {
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: rgb(255, 154, 154);
+	transition: all 0.5s;
+}
+
+.child_board {
+	display: none;
+	color: rgb(44, 44, 44);
+	border-top: none;
+	border-radius: 10px;
+	z-index: 3;
+}
+
+.parent_board {
+	color: white;
+	padding: 12px;
+	text-decoration: none;
+	display: block;
+	background-color: #564d4e;
+	text-align: center;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-radius: 10px;
+}
+
+.parent:hover .children-category {
+	display: block;
+	border-radius: 10px;
+}
+
+.drop_list {
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: rgb(255, 154, 154);
+}
+
+.drop_list:hover {
+	display: block;
+	border-radius: 10px;
+}
+
+.drop_btn:hover {
+	text-decoration: underline;
+	text-decoration-color: rgb(255, 154, 154);
+}
